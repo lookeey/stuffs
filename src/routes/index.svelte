@@ -35,8 +35,8 @@
 		}
 
 		& > div {
-			margin: auto;
 			text-align: right;
+			margin: auto 0;
 
 			h1,
 			h2 {
@@ -62,6 +62,10 @@
 				max-width: 280px;
 				margin: auto;
 				padding-bottom: 12px;
+			}
+
+			& > div {
+				margin: auto;
 			}
 		}
 	}
