@@ -16,9 +16,16 @@
 </svelte:head>
 
 <style lang="scss">
-	:global(body) {
-		font-family: 'Merriweather', serif;
-		margin: 0;
-		line-height: 1.7;
+	:global {
+		body {
+			font-family: 'Merriweather', serif;
+			margin: 0;
+			line-height: 1.7;
+
+			a {
+				color: black;
+				font-weight: 600;
+			}
+		}
 	}
 </style>

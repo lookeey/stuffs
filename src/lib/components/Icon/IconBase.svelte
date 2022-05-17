@@ -8,6 +8,7 @@
 <style>
 	.icon {
 		display: inline-block;
+		text-indent: initial;
 		width: 24px;
 		height: 24px;
 	}

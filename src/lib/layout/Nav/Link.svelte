@@ -12,13 +12,15 @@
 
 <style lang="scss">
 	a {
-		font-size: 22px;
+		font-size: 20px;
 		color: black;
 		text-decoration: none;
 		margin: 0 8px;
+		font-weight: initial;
 
 		&.active {
 			font-weight: 600;
+			text-decoration: underline;
 		}
 	}
 </style>
