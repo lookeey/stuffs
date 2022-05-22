@@ -80,7 +80,7 @@
 			}
 		}
 
-		@media screen and (max-width: $breakpoint-sm) {
+		@media screen and (max-width: $screen-sm) {
 			flex-direction: column;
 			padding: 10vh 0 10vh;
 
