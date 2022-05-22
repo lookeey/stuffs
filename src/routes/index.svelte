@@ -2,6 +2,7 @@
 	import { SvelteLogo } from '$components/Icon';
 	import Title from '$components/Title';
 	import Wrapper from '$lib/layout/Wrapper';
+	import Content from '$lib/layout/Wrapper/Content.svelte';
 </script>
 
 <Title />
@@ -16,7 +17,7 @@
 		</div>
 		<br />
 	</div>
-	<div class="content">
+	<Content>
 		<p>
 			This site is a multipurpose collection of tools I find useful and a small playground for
 			experimenting new stuff.
@@ -28,7 +29,8 @@
 			<span style="font-size: larger">▲</span>&nbsp;<a href="https://vercel.com/">Vercel</a>.
 			<span class="hidden">&#40;and Sass, and Typescript, Node, Yarn, etc.&#41;</span>
 		</p>
-		.<br />.<br />.
+
+		<div style="text-align: center; text-indent: 0;"><br />.<br />.<br />.<br /><br /></div>
 
 		<h2>Why Svelte?</h2>
 		<p>
@@ -43,8 +45,12 @@
 
 		<h2>Where are you?</h2>
 		<p>In the furthest depths of the brazilian araucaria forests, somewhere around the south.</p>
-		<p>If you want to talk to me, you may want to reach me through Discord.</p>
-	</div>
+		<p>
+			If you want to talk to me, you may look at the <a href="/contact" sveltekit:noscroll
+				>contact</a
+			> page.
+		</p>
+	</Content>
 </Wrapper>
 
 <style lang="scss">
@@ -97,31 +103,11 @@
 		}
 	}
 
-	.content {
-		font-size: 20px;
-		max-width: 680px;
-		padding: 0 24px 10vh 48px;
-		margin: 0 auto;
-		text-indent: 16px;
+	.hidden {
+		opacity: 0.07;
 
-		h2 {
-			margin-bottom: 10px;
-		}
-
-		p {
-			margin: 6px 0;
-		}
-
-		.hidden {
-			opacity: 0.07;
-
-			&:hover {
-				opacity: 0.7;
-			}
-		}
-
-		@media screen and (max-width: $breakpoint-sm) {
-			padding: 0 24px 10vh;
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 </style>
