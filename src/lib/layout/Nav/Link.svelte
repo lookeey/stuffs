@@ -8,11 +8,10 @@
 	$: active = path === href || href === $page.url.pathname;
 </script>
 
-<a {href} class:active>{label}</a>
+<a {href} class:active sveltekit:noscroll>{label}</a>
 
 <style lang="scss">
 	a {
-		font-size: 20px;
 		color: black;
 		text-decoration: none;
 		margin: 0 8px;
