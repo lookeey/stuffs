@@ -20,6 +20,24 @@
 			p {
 				margin: 6px 0;
 			}
+
+			div {
+				text-indent: 0;
+			}
+
+			input,
+			input:focus,
+			input:focus-visible {
+				font-family: monospace;
+				font-size: 18px;
+				border: 2.5px solid gray;
+				padding: 4px 6px;
+				outline: none;
+			}
+
+			input:focus {
+				border-color: darkgray;
+			}
 		}
 
 		@media screen and (max-width: $screen-sm) {

@@ -24,6 +24,10 @@
 
 <style lang="scss">
 	:global {
+		* {
+			box-sizing: border-box;
+		}
+
 		body {
 			font-family: 'Merriweather', serif;
 			margin: 0;
