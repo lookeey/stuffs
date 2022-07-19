@@ -16,8 +16,7 @@
 
 	<div class="links">
 		<Link href="/" label="home" /> /
-		<Link href="/contact" label="contact" /> /
-		<Link href="tools" label="tools" />
+		<Link href="/contact" label="contact" />
 	</div>
 
 	<div class="hamburger" />
